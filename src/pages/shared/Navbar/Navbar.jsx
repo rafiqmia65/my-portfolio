@@ -8,6 +8,7 @@ import {
   FaProjectDiagram,
   FaEnvelope,
 } from "react-icons/fa";
+import logo from "../../../assets/MR.png";
 
 const Navbar = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
@@ -57,7 +58,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center px-4 py-3">
         {/* Logo (Desktop only) */}
         <div className="text-xl font-bold text-primary hidden lg:block">
-          Md Rafiq Mia
+          <img className="w-10 h-8" src={logo} alt="" />
         </div>
 
         {/* Desktop Menu */}
