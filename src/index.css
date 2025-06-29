@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark;
+}
+/* 33332a */
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: #badc58; /* primary */
+  --color-secondary: #33332a; /* secondary */
+  --color-accent: #fcd29f;
+  --color-error: #ff7979; /* error */
+  --color-success: #6ab04c; /* success */
+  --color-info: #74b9ff; /* info */
+  --color-border: #f9ca24; /* neutral */
+  --color-base: #33332a;
+}
+
+@plugin "daisyui/theme" {
+  name: "dark";
+  --color-primary: #badc58;
+  --color-secondary: #1f1f1f;
+  --color-accent: #fcd29f;
+  --color-error: #ff6b6b;
+  --color-success: #6ab04c;
+  --color-info: #74b9ff;
+  --color-border: #f9ca24;
+}
+
+* {
+  font-family: "Urbanist", sans-serif;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #f0932b; /* your primary color */
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #eb4d4b; /* accent on hover */
+}
