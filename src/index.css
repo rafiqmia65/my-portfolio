@@ -4,29 +4,32 @@
 @plugin "daisyui" {
   themes: light --default, dark --prefersdark;
 }
-/* 33332a */
+
+/* Light Theme Color */
 @plugin "daisyui/theme" {
   name: "light";
   default: true;
-  --color-primary: #badc58; /* primary */
-  --color-secondary: #33332a; /* secondary */
-  --color-accent: #fcd29f;
-  --color-error: #ff7979; /* error */
-  --color-success: #6ab04c; /* success */
-  --color-info: #74b9ff; /* info */
-  --color-border: #f9ca24; /* neutral */
-  --color-base: #33332a;
+  /* bg color) */
+  --color-primary: #1c352d;
+  /* card bg */
+  --color-secondary: #f5c9b0;
+  /* heading color */
+  --color-success: #a6b28b;
+  /* Text -color */
+  --color-text: #f9f6f3;
 }
 
+/* Dark Theme color */
 @plugin "daisyui/theme" {
   name: "dark";
-  --color-primary: #badc58;
-  --color-secondary: #1f1f1f;
-  --color-accent: #fcd29f;
-  --color-error: #ff6b6b;
-  --color-success: #6ab04c;
-  --color-info: #74b9ff;
-  --color-border: #f9ca24;
+  /* bg color) */
+  --color-primary: #222831;
+  /* card bg */
+  --color-secondary: #06202b;
+  /* heading color */
+  --color-success: #dfd0b8;
+  /* Text -color */
+  --color-text: #e5e7eb;
 }
 
 * {
@@ -35,10 +38,10 @@
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: #f0932b; /* your primary color */
+  color: #f0932b;
 }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  color: #eb4d4b; /* accent on hover */
+  color: #eb4d4b;
 }
