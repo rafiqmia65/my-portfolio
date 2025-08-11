@@ -7,8 +7,6 @@ const ProjectCard = ({ project }) => {
   const [hovered, setHovered] = useState(false);
   const [imageHovered, setImageHovered] = useState(false);
 
-  console.log(project);
-
   return (
     <div
       className="relative rounded-xl overflow-hidden shadow-lg bg-white/5 border border-gray-700/30 hover:border-primary/50 transition-all duration-100 flex flex-col h-full"

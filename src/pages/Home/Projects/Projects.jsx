@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ProjectCard from "./ProjectCard/ProjectCard";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -69,6 +70,17 @@ const Projects = () => {
             <ProjectCard key={project.id} project={project} />
           ))}
         </div>
+      </div>
+      <div className="mt-10">
+        <a
+          href={"https://github.com/rafiqmia65"}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-fit mx-auto flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-gradient-to-r from-success/90 to-emerald-700 text-white font-semibold hover:shadow-lg hover:shadow-success/20 transition-all duration-300"
+        >
+          <FaExternalLinkAlt />
+          <span>View more on Github</span>
+        </a>
       </div>
     </section>
   );

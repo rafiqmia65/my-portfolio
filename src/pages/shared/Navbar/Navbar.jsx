@@ -6,8 +6,8 @@ import {
   FaProjectDiagram,
   FaEnvelope,
 } from "react-icons/fa";
-import DesktopNavbar from "./components/DeskTopNavbar";
 import MobileNavbar from "./components/MobileNavbar";
+import DesktopNavbar from "./components/DesktopNavbar";
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("home");
