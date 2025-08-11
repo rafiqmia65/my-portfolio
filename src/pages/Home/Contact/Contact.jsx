@@ -11,7 +11,7 @@ import {
 
 const Contact = () => {
   return (
-    <section id="contact" className="bg-primary py-20 px-6">
+    <section className="bg-primary py-20 px-6">
       <div className="container mx-auto px-4 lg:px-0">
         <h2 className="text-4xl sm:text-5xl font-extrabold text-center text-success mb-4">
           Get <span className="text-white">in</span> Touch

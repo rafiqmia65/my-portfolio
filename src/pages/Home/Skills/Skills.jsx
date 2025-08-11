@@ -75,10 +75,7 @@ const Skills = () => {
   const [hoveredSkill, setHoveredSkill] = useState(null);
 
   return (
-    <section
-      id="skills"
-      className="relative min-h-screen py-16 bg-primary overflow-hidden"
-    >
+    <section className="relative min-h-screen py-16 bg-primary overflow-hidden">
       <div className="relative z-10 container mx-auto px-4 lg:px-0">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-4">
           My <span className="text-success">Skills</span>

@@ -12,10 +12,7 @@ const Hero = () => {
   const resumeUrl = "/Resume.pdf";
 
   return (
-    <section
-      id="home"
-      className="min-h-screen pt-25 pb-12 lg:pb-0 lg:pt-35 bg-primary"
-    >
+    <section className="min-h-screen pt-25 pb-12 lg:pb-0 lg:pt-35 bg-primary">
       <div className="container mx-auto px-4 lg:px-0 flex flex-col-reverse lg:flex-row items-center justify-center">
         {/* Left: Text & Buttons */}
         <div className="flex-1 text-center lg:text-left space-y-6 lg:pr-10 mt-12 lg:mt-0">
