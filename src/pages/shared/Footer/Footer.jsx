@@ -2,13 +2,15 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-secondary border-t border-primary text-base-content py-6">
-      <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-center gap-4">
-        {/* Left: Name & Year */}
-        <div className="text-center lg:text-left text-sm font-semibold text-white">
-          © {new Date().getFullYear()}{" "}
-          <span className="text-primary">Md Rafiq Mia</span>. All rights
-          reserved.
+    <footer className="bg-primary/98 pb-10 px-6 sm:px-4 lg:px-0 text-white">
+      <div className="container mx-auto">
+        <div className="flex flex-col md:flex-row items-center justify-center border-t border-success pt-8 gap-6">
+          {/* Left: Copyright */}
+          <div className="text-center md:text-center text-lg font-medium">
+            © {new Date().getFullYear()}{" "}
+            <span className="text-success font-bold">Md Rafiq Mia</span>. All
+            rights reserved.
+          </div>
         </div>
       </div>
     </footer>

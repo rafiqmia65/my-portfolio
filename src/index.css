@@ -12,7 +12,7 @@
   /* bg color) --color-primary: #401c69; */
   --color-primary: #1c352d;
   /* card bg #273e37 */
-  --color-secondary: #f5c9b0;
+  --color-secondary: #273e37;
   /* heading color */
   --color-success: #a6b28b;
   /* Text -color */
@@ -22,10 +22,10 @@
 /* Dark Theme color */
 @plugin "daisyui/theme" {
   name: "dark";
-  /* bg color) */
-  --color-primary: #222831;
-  /* card bg */
-  --color-secondary: #1a1b1c;
+  /* bg color) 222831   */
+  --color-primary: #1a1b1c;
+  /* card bg 1a1b1c*/
+  --color-secondary: #222831;
   /* heading color */
   --color-success: #dfd0b8;
   /* Text -color */
