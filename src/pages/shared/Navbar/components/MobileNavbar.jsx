@@ -4,7 +4,7 @@ import logo from "../../../../assets/MR.png";
 const MobileNavbar = ({ navLinks, activeLink, theme, onThemeToggle }) => {
   return (
     <div className="lg:hidden fixed top-0 left-0 w-full z-50 p-4">
-      <div className="flex justify-between items-center w-full px-4 py-3 rounded-full bg-primary bg-opacity-10 backdrop-filter backdrop-blur-lg shadow-xl border border-secondary transition-all duration-500 hover:bg-opacity-20">
+      <div className="flex justify-between items-center w-full px-4 py-3 rounded-full bg-primary bg-opacity-10 backdrop-filter backdrop-blur-lg shadow-xl border-1 border-secondary/20 transition-all duration-500 hover:bg-opacity-20">
         {/* Logo */}
         <div className="flex items-center space-x-3 text-xl font-bold text-primary cursor-pointer">
           <img className="w-10 h-8 rounded-lg" src={logo} alt="Logo" />

@@ -16,7 +16,7 @@
   /* heading color */
   --color-success: #a6b28b;
   /* Text -color */
-  --color-text: #f9f6f3;
+  --color-white: #f9f6f3;
 }
 
 /* Dark Theme color */
@@ -25,11 +25,11 @@
   /* bg color) */
   --color-primary: #222831;
   /* card bg */
-  --color-secondary: #06202b;
+  --color-secondary: #1a1b1c;
   /* heading color */
   --color-success: #dfd0b8;
   /* Text -color */
-  --color-text: #e5e7eb;
+  --color-white: #e5e7eb;
 }
 
 * {
