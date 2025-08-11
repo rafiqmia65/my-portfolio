@@ -11,10 +11,10 @@ import {
 
 const Contact = () => {
   return (
-    <section id="contact" className="bg-primary py-20 px-6 sm:px-10 lg:px-20">
-      <div className="container mx-auto">
-        <h2 className="text-4xl font-extrabold text-center text-success mb-4">
-          Get in Touch
+    <section id="contact" className="bg-primary py-20 px-6">
+      <div className="container mx-auto px-4 lg:px-0">
+        <h2 className="text-4xl sm:text-5xl font-extrabold text-center text-success mb-4">
+          Get <span className="text-white">in</span> Touch
         </h2>
         <p className="text-center text-white mb-12 max-w-2xl mx-auto">
           I'm currently available for new projects. Whether you have a question

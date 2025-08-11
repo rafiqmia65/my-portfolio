@@ -26,13 +26,11 @@ const Home = () => {
 
   return (
     <div>
-      <Navbar></Navbar>
       <Hero></Hero>
       <About></About>
       <Skills></Skills>
       <Projects></Projects>
       <Contact></Contact>
-      <Footer></Footer>
     </div>
   );
 };

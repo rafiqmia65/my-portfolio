@@ -28,7 +28,7 @@ const ProjectCard = ({ project }) => {
         <motion.img
           src={project.image}
           alt={project.name}
-          className="w-full h-full object-cover"
+          className="w-full h-48 object-cover"
           initial={{ scale: 1 }}
           animate={{ scale: hovered ? 1.05 : 1 }}
           transition={{ duration: 0.5 }}

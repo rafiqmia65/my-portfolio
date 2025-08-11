@@ -4,10 +4,7 @@ import { SiTypescript, SiNextdotjs, SiGraphql, SiDocker } from "react-icons/si";
 
 const About = () => {
   return (
-    <section
-      id="about"
-      className="py-20 px-6 lg:px-20 bg-primary/98 text-white"
-    >
+    <section id="about" className="py-20 bg-primary/98 text-white">
       <div className="container mx-auto px-4 lg:px-0">
         <div className="flex flex-col lg:flex-row gap-12 items-stretch">
           {/* Left Column - Intro */}
@@ -77,7 +74,10 @@ const About = () => {
                   "Accessibility as priority",
                   "Continuous learning mindset",
                 ].map((item) => (
-                  <li key={item} className="flex items-start gap-3 group">
+                  <li
+                    key={item}
+                    className="flex items-start gap-3 group transform transition-transform duration-300 hover:translate-x-2"
+                  >
                     <span className="text-success mt-1">✓</span>
                     <span className="group-hover:text-success transition-colors">
                       {item}
@@ -117,7 +117,7 @@ const About = () => {
                 ].map((tech) => (
                   <span
                     key={tech.name}
-                    className="px-3 py-2 bg-success/10 text-success rounded-full border border-success/30 hover:bg-success/20 transition-colors flex items-center gap-2"
+                    className="px-3 py-2 bg-success/10 text-white rounded-full border border-success/30 hover:bg-success/20 transition-colors flex items-center gap-2"
                   >
                     {tech.icon}
                     {tech.name}

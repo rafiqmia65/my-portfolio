@@ -35,13 +35,3 @@
 * {
   font-family: "Urbanist", sans-serif;
 }
-
-.swiper-button-next,
-.swiper-button-prev {
-  color: #f0932b;
-}
-
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  color: #eb4d4b;
-}

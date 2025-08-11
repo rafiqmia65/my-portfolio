@@ -8,7 +8,7 @@ const projects = [
     tagline: "Class Management Platform",
     description:
       "A comprehensive class management platform with role-based dashboards for admins, teachers, and students.",
-    image: "https://i.ibb.co/mTDv63m/mentorium.jpg",
+    image: "https://i.ibb.co.com/qYCcP8FM/Screenshot-151.png",
     technologies: [
       { category: "Frontend", items: ["React", "Tailwind CSS", "React Query"] },
       { category: "Backend", items: ["Node.js", "Express", "MongoDB"] },
@@ -34,7 +34,7 @@ const projects = [
     tagline: "Hotel Booking Platform",
     description:
       "A modern hotel booking web application with advanced filtering, real-time availability, and booking management.",
-    image: "https://i.ibb.co/4jbyV4M/hoteleo.jpg",
+    image: "https://i.ibb.co.com/Zyq0g4h/Screenshot-152.png",
     technologies: [
       {
         category: "Frontend",
@@ -60,7 +60,7 @@ const projects = [
     tagline: "Productivity Management",
     description:
       "A task management application with secure authentication and a fully responsive interface.",
-    image: "https://i.ibb.co/Ss8L8zH/tasknexus.jpg",
+    image: "https://i.ibb.co.com/3Y12yC8m/Screenshot-154.png",
     technologies: [
       { category: "Frontend", items: ["React", "Tailwind CSS", "DaisyUI"] },
       { category: "Backend", items: ["Node.js", "Express", "MongoDB"] },
@@ -85,10 +85,10 @@ const Projects = () => {
       id="projects"
       className="py-16 px-4 sm:px-6 lg:px-8 bg-primary/98 text-white"
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="container mx-auto px-4 lg:px-0">
         <div className="text-center mb-12">
           <h2 className="text-4xl sm:text-5xl font-extrabold bg-success bg-clip-text text-transparent">
-            Featured Projects
+            <span className="text-white">Featured</span> Projects
           </h2>
           <p className="mt-3 text-lg text-white">
             Showcasing my best work with modern tech & sleek design.

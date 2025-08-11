@@ -4,7 +4,7 @@ import ThemeToggle from "./ThemeToggle";
 const DesktopNavbar = ({ navLinks, activeLink, theme, onThemeToggle }) => {
   return (
     <div className="hidden lg:block fixed top-0 left-0 w-full z-50 p-4">
-      <div className="bg-primary border-1 border-secondary/20 container mx-auto flex justify-between items-center px-6 py-4 rounded-full backdrop-filter backdrop-blur-lg shadow-xl transition-all duration-500">
+      <div className="bg-secondary container mx-auto flex justify-between items-center px-6 py-4 rounded-full backdrop-filter backdrop-blur-lg shadow-xl transition-all duration-500">
         {/* Logo */}
         <div className="flex items-center space-x-3 text-xl font-bold text-primary cursor-pointer">
           <img className="w-10 h-8 rounded-lg" src={logo} alt="Logo" />

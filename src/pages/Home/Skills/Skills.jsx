@@ -13,7 +13,6 @@ import {
   SiMongodb,
   SiExpress,
   SiJavascript,
-  SiFirebase,
   SiReactrouter,
   SiRedux,
   SiAxios,
@@ -78,9 +77,9 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="relative min-h-screen py-16 px-6 lg:px-20 bg-primary overflow-hidden"
+      className="relative min-h-screen py-16 bg-primary overflow-hidden"
     >
-      <div className="relative z-10 max-w-7xl mx-auto">
+      <div className="relative z-10 container mx-auto px-4 lg:px-0">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-4">
           My <span className="text-success">Skills</span>
         </h2>
