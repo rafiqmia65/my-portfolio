@@ -1,10 +1,13 @@
 import React, { useState } from "react";
+import { Link } from "react-router";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import { motion, AnimatePresence } from "framer-motion";
 
 const ProjectCard = ({ project }) => {
   const [hovered, setHovered] = useState(false);
   const [imageHovered, setImageHovered] = useState(false);
+
+  console.log(project);
 
   return (
     <div
@@ -156,6 +159,12 @@ const ProjectCard = ({ project }) => {
             </motion.a>
           )}
         </div>
+        <Link
+          to={`project-details/${project.id}`}
+          className="flex items-center justify-center gap-2 px-2 py-2 rounded-lg bg-primary  hover:bg-primary/80 cursor-pointer text-white text-sm font-medium mt-3"
+        >
+          View Details
+        </Link>
       </div>
     </div>
   );

@@ -1,0 +1,105 @@
+[
+  {
+    "id": "1",
+    "name": "Mentorium",
+    "tagline": "Class Management Platform",
+    "description": "A comprehensive class management platform with role-based dashboards for admins, teachers, and students.",
+    "detailedDescription": "Mentorium is a full-stack class management platform designed to streamline educational workflows. It provides dedicated dashboards for different user roles—admins, teachers, and students—each with tailored functionalities. Teachers can create and manage classes, assignments, and quizzes, while students can enroll in courses, submit work, and track their progress in real-time. The platform also includes robust features for secure payment processing via Stripe, Firebase authentication for user access, and Cloudinary for media management.",
+    "image": "https://i.ibb.co.com/qYCcP8FM/Screenshot-151.png",
+    "technologies": [
+      {
+        "category": "Frontend",
+        "items": ["React", "Tailwind CSS", "React Query"]
+      },
+      {
+        "category": "Backend",
+        "items": ["Node.js", "Express", "MongoDB"]
+      },
+      {
+        "category": "Services",
+        "items": ["Firebase Auth", "Stripe", "Cloudinary"]
+      }
+    ],
+    "links": {
+      "live": "https://rafiqmia-mentorium.netlify.app/",
+      "client": "https://github.com/rafiqmia65/mentorium-client",
+      "server": "https://github.com/rafiqmia65/mentorium-server"
+    },
+    "features": [
+      "Role-Based Dashboards: Separate views for Admin, Teacher, and Student roles.",
+      "Class Management: Teachers can create and manage classes, assignments, and quizzes.",
+      "Student Enrollment & Progress: Students can enroll in courses and track their progress.",
+      "Secure Payments: Integrated with Stripe for secure payment processing.",
+      "Media Management: Utilizes Cloudinary for efficient handling of media files.",
+      "Authentication: Secure user login and registration with Firebase."
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Hoteleo",
+    "tagline": "Hotel Booking Platform",
+    "description": "A modern hotel booking web application with advanced filtering, real-time availability, and booking management.",
+    "detailedDescription": "Hoteleo is a sophisticated hotel booking application that offers a seamless user experience. It allows users to search for rooms using advanced filtering options like price, category, and real-time availability. The booking system is intuitive, enabling users to reserve rooms and manage their bookings with ease, including options to update, cancel, or leave reviews. The application is built on a robust MERN stack, with a focus on security, utilizing Firebase for user authentication and JWT for secure token-based access.",
+    "image": "https://i.ibb.co.com/Zyq0g4h/Screenshot-152.png",
+    "technologies": [
+      {
+        "category": "Frontend",
+        "items": ["React", "Tailwind CSS", "React Leaflet"]
+      },
+      {
+        "category": "Backend",
+        "items": ["Node.js", "Express", "MongoDB"]
+      },
+      {
+        "category": "Services",
+        "items": ["Firebase Auth", "JWT"]
+      }
+    ],
+    "links": {
+      "live": "https://hoteleo.netlify.app/",
+      "client": "https://github.com/rafiqmia65/hoteleo-client",
+      "server": "https://github.com/rafiqmia65/hoteleo-server"
+    },
+    "features": [
+      "Advanced Search & Filtering: Filter rooms by price, category, and availability.",
+      "Booking Management: Users can update, cancel, or review their reservations.",
+      "User Reviews: Functionality to leave and view reviews for hotels.",
+      "Real-time Availability: Displays real-time status of room availability.",
+      "Secure Authentication: User login via email and Google with Firebase.",
+      "JWT Security: Secure communication and authorization using JSON Web Tokens."
+    ]
+  },
+  {
+    "id": "3",
+    "name": "TaskNexus",
+    "tagline": "Productivity Management",
+    "description": "A task management application with secure authentication and a fully responsive interface.",
+    "detailedDescription": "TaskNexus is a sleek, modern, and intuitive task management application designed to enhance productivity. It features a fully responsive and user-friendly interface built with React and Tailwind CSS. The platform allows users to perform all essential task-related actions, including creating new tasks, editing existing ones, marking them as complete, and deleting them. It ensures a secure experience through Firebase authentication, providing users with a safe and reliable way to manage their daily to-dos.",
+    "image": "https://i.ibb.co.com/3Y12yC8m/Screenshot-154.png",
+    "technologies": [
+      {
+        "category": "Frontend",
+        "items": ["React", "Tailwind CSS", "DaisyUI"]
+      },
+      {
+        "category": "Backend",
+        "items": ["Node.js", "Express", "MongoDB"]
+      },
+      {
+        "category": "Services",
+        "items": ["Firebase Auth"]
+      }
+    ],
+    "links": {
+      "live": "https://rafiqmia-tasknexus.netlify.app/",
+      "client": "https://github.com/rafiqmia65/task-nexus-client",
+      "server": "https://github.com/rafiqmia65/task-nexus-server"
+    },
+    "features": [
+      "Task Management: Create, edit, and delete tasks easily.",
+      "Task Status: Mark tasks as complete to track progress.",
+      "Secure Login: User authentication provided by Firebase.",
+      "Responsive UI: The interface is fully responsive for all devices."
+    ]
+  }
+]

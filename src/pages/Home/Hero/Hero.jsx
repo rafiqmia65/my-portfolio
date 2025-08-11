@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 
 const Hero = () => {
-  const resumeUrl = "/MdRafiqMia_Resume.pdf";
+  const resumeUrl = "/Resume.pdf";
 
   return (
     <section

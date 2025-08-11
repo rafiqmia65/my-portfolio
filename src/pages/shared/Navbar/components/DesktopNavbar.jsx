@@ -1,7 +1,9 @@
 import logo from "../../../../assets/MR.png";
 import ThemeToggle from "./ThemeToggle";
+import { FaDownload } from "react-icons/fa";
 
 const DesktopNavbar = ({ navLinks, activeLink, theme, onThemeToggle }) => {
+  const resumeUrl = "/Resume.pdf";
   return (
     <div className="hidden lg:block fixed top-0 left-0 w-full z-50 p-4">
       <div className="bg-secondary container mx-auto flex justify-between items-center px-6 py-4 rounded-full backdrop-filter backdrop-blur-lg shadow-xl transition-all duration-500">
@@ -36,8 +38,20 @@ const DesktopNavbar = ({ navLinks, activeLink, theme, onThemeToggle }) => {
           ))}
         </div>
 
-        {/*Theme toggle button */}
-        <ThemeToggle theme={theme} onToggle={onThemeToggle} />
+        <div className="flex gap-3 items-center">
+          {/*Theme toggle button */}
+          <ThemeToggle theme={theme} onToggle={onThemeToggle} />
+          <a
+            href={resumeUrl}
+            download
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-secondary border border-success/80 hover:bg-success/40 text-[#fff] font-semibold transition-all shadow-lg transform duration-300"
+          >
+            <FaDownload className="text-lg" />
+            <span>Resume</span>
+          </a>
+        </div>
       </div>
     </div>
   );
