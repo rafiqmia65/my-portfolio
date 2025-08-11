@@ -1,144 +1,102 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
+import ProjectCard from "./ProjectCard/ProjectCard";
 
 const projects = [
   {
+    id: "mentorium",
+    name: "Mentorium",
+    tagline: "Class Management Platform",
+    description:
+      "A comprehensive class management platform with role-based dashboards for admins, teachers, and students.",
+    image: "https://i.ibb.co/mTDv63m/mentorium.jpg",
+    technologies: [
+      { category: "Frontend", items: ["React", "Tailwind CSS", "React Query"] },
+      { category: "Backend", items: ["Node.js", "Express", "MongoDB"] },
+      {
+        category: "Services",
+        items: ["Firebase Auth", "Stripe", "Cloudinary"],
+      },
+    ],
+    links: {
+      live: "https://rafiqmia-mentorium.netlify.app/",
+      client: "https://github.com/rafiqmia65/mentorium-client",
+      server: "https://github.com/rafiqmia65/mentorium-server",
+    },
+    features: [
+      "Roles & Management: Admin, Teacher, Student Dashboards",
+      "Features: Class & Assignment Management, Enrollment, Feedback",
+      "Extras: Real-time Progress, Secure Payment (Stripe), Firebase Auth",
+    ],
+  },
+  {
     id: "hoteleo",
     name: "Hoteleo",
-    images: [
-      "https://i.ibb.co/Z1m8MtxC/Screenshot-47.png",
-      "https://i.ibb.co/jkpBFykM/Screenshot-48.png",
-    ],
+    tagline: "Hotel Booking Platform",
     description:
-      "Hoteleo is a hotel booking platform where users can browse, filter, and book rooms. Includes authentication, booking dashboard, reviews, and admin controls.",
+      "A modern hotel booking web application with advanced filtering, real-time availability, and booking management.",
+    image: "https://i.ibb.co/4jbyV4M/hoteleo.jpg",
     technologies: [
-      "React",
-      "Tailwind CSS",
-      "Firebase",
-      "Express",
-      "MongoDB",
-      "JWT",
-      "DaisyUi",
+      {
+        category: "Frontend",
+        items: ["React", "Tailwind CSS", "React Leaflet"],
+      },
+      { category: "Backend", items: ["Node.js", "Express", "MongoDB"] },
+      { category: "Services", items: ["Firebase Auth", "JWT"] },
     ],
-    github: "https://github.com/rafiqmia65/hoteleo-client",
-    live: "https://hoteleo.netlify.app/",
+    links: {
+      live: "https://hoteleo.netlify.app/",
+      client: "https://github.com/rafiqmia65/hoteleo-client",
+      server: "https://github.com/rafiqmia65/hoteleo-server",
+    },
+    features: [
+      " Filtering & Search: Rooms by Price, Category, Availability",
+      "Booking: Real-time Availability, Manage (Update, Cancel, Review)",
+      "Security: Firebase Auth (Email & Google)",
+    ],
   },
   {
     id: "tasknexus",
     name: "TaskNexus",
-    images: [
-      "https://i.ibb.co/8gnZc5R8/Screenshot-49.png",
-      "https://i.ibb.co/dJQY5W4v/Screenshot-50.png",
-    ],
+    tagline: "Productivity Management",
     description:
-      "TaskNexus helps users manage their daily productivity through task creation, status updates,Task bids and deadlines. Includes authentication, role-based views, and REST API.",
+      "A task management application with secure authentication and a fully responsive interface.",
+    image: "https://i.ibb.co/Ss8L8zH/tasknexus.jpg",
     technologies: [
-      "React",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "Firebase",
-      "Tailwind",
+      { category: "Frontend", items: ["React", "Tailwind CSS", "DaisyUI"] },
+      { category: "Backend", items: ["Node.js", "Express", "MongoDB"] },
+      { category: "Services", items: ["Firebase Auth"] },
     ],
-    github: "https://github.com/rafiqmia65/tasknexus-client",
-    live: "https://rafiqmia-tasknexus.netlify.app/",
-  },
-  {
-    id: "hibiscus",
-    name: "Job Tracks",
-    images: [
-      "https://i.ibb.co/Pv2Lvq03/Screenshot-51.png",
-      "https://i.ibb.co/GvWtvjHd/Screenshot-52.png",
+    links: {
+      live: "https://rafiqmia-tasknexus.netlify.app/",
+      client: "https://github.com/rafiqmia65/task-nexus-client",
+      server: "https://github.com/rafiqmia65/task-nexus-server",
+    },
+    features: [
+      "Task Management: Create, Edit, Complete, Delete Tasks",
+      "Security: Firebase Auth with Secure Access",
+      "UI: Fully Responsive & User-Friendly Interface",
     ],
-    description:
-      "Job Tracks is a modern and efficient job application tracking platform designed to help job seekers organize and streamline their job hunt journey. It offers intuitive tools and a visually clean interface to monitor all application-related activities in one place.",
-    technologies: ["React", "React Router", "Firebase", "Tailwind", "Express"],
-    github: "https://github.com/rafiqmia65/hibiscus",
-    live: "https://hibiscus-feee5.web.app/",
   },
 ];
 
 const Projects = () => {
   return (
-    <section
-      id="projects"
-      className="bg-secondary py-12 pt-0 px-4 lg:px-20"
-    >
-      <h2 className="text-3xl font-bold text-center text-primary mb-12">
-        My Projects
-      </h2>
+    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-primary/98 text-white">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl sm:text-5xl font-extrabold bg-success bg-clip-text text-transparent">
+            Featured Projects
+          </h2>
+          <p className="mt-3 text-lg text-white">
+            Showcasing my best work with modern tech & sleek design.
+          </p>
+        </div>
 
-      <div className="space-y-14">
-        {projects.map((project, index) => (
-          <div
-            key={project.id}
-            className={`flex flex-col lg:flex-row p-5 rounded-2xl shadow-2xl ${
-              index % 2 !== 0 ? "lg:flex-row-reverse" : ""
-            } items-center gap-10`}
-          >
-            {/* Swiper Image Carousel */}
-            <div className="w-full lg:w-1/2">
-              <Swiper
-                navigation={true}
-                modules={[Navigation]}
-                className="custom-swiper rounded-lg shadow-lg"
-              >
-                {project.images.map((img, i) => (
-                  <SwiperSlide key={i}>
-                    <img
-                      src={img}
-                      alt={`${project.name} screenshot ${i + 1}`}
-                      className="w-full h-64 object-cover rounded-lg"
-                    />
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </div>
-
-            {/* Project Details */}
-            <div className="w-full lg:w-1/2 space-y-4">
-              <h3 className="text-2xl font-semibold text-primary">
-                {project.name}
-              </h3>
-              <p className="text-accent">{project.description}</p>
-
-              {/* Tech Stack */}
-              <div className="flex flex-wrap gap-2">
-                {project.technologies.map((tech, idx) => (
-                  <span
-                    key={idx}
-                    className="px-3 py-1 bg-accent/20 text-sm text-white rounded-full shadow-sm border border-primary/40"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-
-              {/* Buttons */}
-              <div className="flex gap-3 mt-3">
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-4 py-2 border border-primary text-primary rounded hover:bg-primary hover:text-black transition"
-                >
-                  GitHub Repo
-                </a>
-                <a
-                  href={project.live}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-4 py-2 bg-primary text-black font-medium rounded hover:bg-secondary transition border-primary border hover:text-primary"
-                >
-                  Live Site
-                </a>
-              </div>
-            </div>
-          </div>
-        ))}
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {projects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
+        </div>
       </div>
     </section>
   );

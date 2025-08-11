@@ -9,9 +9,9 @@
 @plugin "daisyui/theme" {
   name: "light";
   default: true;
-  /* bg color) */
+  /* bg color) --color-primary: #401c69; */
   --color-primary: #1c352d;
-  /* card bg */
+  /* card bg #273e37 */
   --color-secondary: #f5c9b0;
   /* heading color */
   --color-success: #a6b28b;
