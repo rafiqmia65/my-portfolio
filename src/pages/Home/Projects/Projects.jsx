@@ -49,7 +49,7 @@ const projects = [
       server: "https://github.com/rafiqmia65/hoteleo-server",
     },
     features: [
-      " Filtering & Search: Rooms by Price, Category, Availability",
+      "Filtering & Search: Rooms by Price, Category, Availability",
       "Booking: Real-time Availability, Manage (Update, Cancel, Review)",
       "Security: Firebase Auth (Email & Google)",
     ],
@@ -81,7 +81,10 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-primary/98 text-white">
+    <section
+      id="projects"
+      className="py-16 px-4 sm:px-6 lg:px-8 bg-primary/98 text-white"
+    >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl sm:text-5xl font-extrabold bg-success bg-clip-text text-transparent">

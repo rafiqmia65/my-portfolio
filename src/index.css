@@ -11,7 +11,7 @@
   default: true;
   /* bg color) --color-primary: #401c69; */
   --color-primary: #1c352d;
-  /* card bg #273e37 */
+  /* card bg */
   --color-secondary: #273e37;
   /* heading color */
   --color-success: #a6b28b;
@@ -25,7 +25,7 @@
   /* bg color) 222831   */
   --color-primary: #1a1b1c;
   /* card bg 1a1b1c*/
-  --color-secondary: #222831;
+  --color-secondary: #242627;
   /* heading color */
   --color-success: #dfd0b8;
   /* Text -color */
