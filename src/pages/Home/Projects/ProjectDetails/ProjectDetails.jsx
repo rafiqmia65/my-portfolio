@@ -200,7 +200,7 @@ const ProjectDetails = () => {
                 <FaCode />
                 <span>Client Code</span>
               </a>
-              {project.links.server && (
+              {/* {project.links.server && (
                 <a
                   href={project.links.server}
                   target="_blank"
@@ -210,7 +210,7 @@ const ProjectDetails = () => {
                   <FaCode />
                   <span>Server Code</span>
                 </a>
-              )}
+              )} */}
             </div>
           </div>
         </div>

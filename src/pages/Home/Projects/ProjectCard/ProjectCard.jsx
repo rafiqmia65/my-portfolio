@@ -66,7 +66,7 @@ const ProjectCard = ({ project }) => {
               >
                 <FiGithub size={20} />
               </motion.a>
-              {project.links.server && (
+              {/* {project.links.server && (
                 <motion.a
                   whileHover={{ scale: 1.1 }}
                   href={project.links.server}
@@ -77,7 +77,7 @@ const ProjectCard = ({ project }) => {
                 >
                   <FiGithub size={20} />
                 </motion.a>
-              )}
+              )} */}
             </motion.div>
           )}
         </AnimatePresence>
@@ -136,7 +136,7 @@ const ProjectCard = ({ project }) => {
 
         {/* Buttons Row */}
         <div className="mt-auto flex gap-3">
-          <motion.a
+          {/* <motion.a
             whileHover={{ y: -2 }}
             href={project.links.client}
             target="_blank"
@@ -155,14 +155,15 @@ const ProjectCard = ({ project }) => {
             >
               <FiGithub /> Server
             </motion.a>
-          )}
+          )} */}
+
+          <Link
+            to={`project-details/${project.id}`}
+            className="flex flex-1 items-center justify-center gap-2 px-2 py-2 rounded-lg bg-primary  hover:bg-primary/80 cursor-pointer text-white text-sm font-medium mt-3"
+          >
+            View Details
+          </Link>
         </div>
-        <Link
-          to={`project-details/${project.id}`}
-          className="flex items-center justify-center gap-2 px-2 py-2 rounded-lg bg-primary  hover:bg-primary/80 cursor-pointer text-white text-sm font-medium mt-3"
-        >
-          View Details
-        </Link>
       </div>
     </div>
   );
