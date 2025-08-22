@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 
 const Hero = () => {
-  const resumeUrl = "/Resume.pdf";
+  // const resumeUrl = "/Resume.pdf";
 
   return (
     <section className="min-h-screen pt-25 pb-12 lg:pb-0 lg:pt-35 bg-primary">
@@ -34,7 +34,9 @@ const Hero = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
             <a
-              href={resumeUrl}
+              href={
+                "https://drive.google.com/file/d/1qpEHK-46o8DuH7AAehZ2ImEN3QJ5GYdo/view"
+              }
               download
               target="_blank"
               rel="noopener noreferrer"

@@ -6,7 +6,7 @@ import { FaDownload } from "react-icons/fa";
 const DesktopNavbar = ({ navLinks, theme, onThemeToggle }) => {
   const location = useLocation();
   const currentHash = location.hash.replace("#", "");
-  const resumeUrl = "/Resume.pdf";
+  // const resumeUrl = "/Resume.pdf";
 
   return (
     <div className="hidden lg:block fixed top-0 left-0 w-full z-50 p-4">
@@ -50,7 +50,7 @@ const DesktopNavbar = ({ navLinks, theme, onThemeToggle }) => {
         <div className="flex gap-3 items-center">
           <ThemeToggle theme={theme} onToggle={onThemeToggle} />
           <a
-            href={resumeUrl}
+            href={`https://drive.google.com/file/d/1qpEHK-46o8DuH7AAehZ2ImEN3QJ5GYdo/view`}
             download
             target="_blank"
             rel="noopener noreferrer"
