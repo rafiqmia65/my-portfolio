@@ -85,7 +85,7 @@ const Contact = () => {
                 <div className="flex items-center gap-4 group cursor-pointer transition-all duration-300 transform hover:translate-x-3">
                   <FaWhatsapp className="text-green-500 text-2xl group-hover:text-green-400 transition-colors" />
                   <span className="text-gray-300 text-lg group-hover:text-white transition-colors">
-                    +880 1785489196
+                    +880 1741134465
                   </span>
                 </div>
               </div>
@@ -155,7 +155,7 @@ const Contact = () => {
                 {/* WhatsApp */}
                 <div className="relative group">
                   <a
-                    href="https://wa.me/8801785489196"
+                    href="https://wa.me/8801741134465"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center"
