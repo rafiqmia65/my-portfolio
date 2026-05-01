@@ -7,6 +7,7 @@ import {
   FaPaperPlane,
   FaWhatsapp,
 } from "react-icons/fa";
+import { Typewriter } from "react-simple-typewriter";
 
 const Hero = () => {
   // const resumeUrl = "/Resume.pdf";
@@ -23,13 +24,25 @@ const Hero = () => {
             </h1>
           </div>
 
-          <p className="text-2xl font-semibold text-white bg-success/10 px-4 py-2 rounded-lg inline-block backdrop-blur-sm border border-success/20">
-            FrontEnd Developer | React.js Specialist
+          <p className="w-[320px] md:w-[420px] h-[56px] mx-auto lg:mx-0 flex items-center justify-center lg:justify-start text-2xl font-semibold text-white bg-success/10 px-4 py-2 rounded-lg backdrop-blur-sm border border-success/20 overflow-hidden whitespace-nowrap">
+            <Typewriter
+              words={[
+                "Full Stack Developer",
+                "Backend Developer",
+                "Frontend Developer",
+              ]}
+              loop={0} // infinite loop
+              cursor
+              cursorStyle="|"
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={1500}
+            />
           </p>
 
           <p className="max-w-lg mx-auto lg:mx-0 text-lg text-white leading-relaxed">
-            I'm a Frontend Developer passionate about building modern,
-            responsive, and user-friendly web interfaces using React.
+            Full Stack Developer focused on building modern, scalable, and
+            high-performance web applications with great user experience.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
@@ -100,7 +113,7 @@ const Hero = () => {
         <div className="flex-1 flex justify-center relative">
           <div className="relative group">
             <img
-              src="https://i.ibb.co/39x6vLZQ/1717276024050.jpg"
+              src="https://i.ibb.co.com/BVpfJsNy/IMG-20260225-003144.png"
               alt="Md Rafiq Mia"
               className="w-60 h-60 md:w-80 md:h-80 rounded-full object-cover shadow-2xl border-4 border-success relative z-10 transition-transform duration-300 transform group-hover:scale-105"
             />

@@ -1,6 +1,13 @@
 import React from "react";
 import { FaLightbulb, FaSeedling, FaStar, FaAws } from "react-icons/fa";
-import { SiTypescript, SiNextdotjs, SiGraphql, SiDocker } from "react-icons/si";
+import {
+  SiGraphql,
+  SiDocker,
+  SiGo,
+  SiApollographql,
+  SiAmazonwebservices,
+} from "react-icons/si";
+import { FaServer, FaChartLine } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -16,30 +23,42 @@ const About = () => {
               <p>
                 I'm a{" "}
                 <strong className="text-success font-bold">
-                  Frontend Developer
+                  Full Stack Developer
                 </strong>{" "}
-                passionate about building modern, responsive, and user-friendly
-                web interfaces using{" "}
-                <strong className="font-bold">React</strong>. I have a solid
-                foundation in HTML, CSS, and JavaScript, and I am dedicated to
-                creating clean, performant, and accessible code.
+                with a strong focus on building modern, scalable, and
+                high-performance web applications. I work across the entire
+                development lifecycle — from{" "}
+                <span className="text-success font-medium">
+                  frontend UI/UX design
+                </span>{" "}
+                to{" "}
+                <span className="text-success font-medium">
+                  backend architecture and API development
+                </span>{" "}
+                ensuring seamless integration between all layers of the system.
               </p>
+
               <p>
-                My passion for development extends to the full stack, where I
-                have practical experience with the MERN stack—specifically{" "}
-                <strong className="font-bold">Node.js</strong>,{" "}
-                <strong className="font-bold">Express.js</strong>, and{" "}
-                <strong className="font-bold">MongoDB</strong>. This allows me
-                to build robust, end-to-end solutions and understand the full
-                lifecycle of a web application.
+                I have hands-on experience working with modern frontend
+                technologies and robust backend systems. I build{" "}
+                <span className="text-success font-medium">
+                  responsive, interactive user interfaces
+                </span>{" "}
+                while also designing{" "}
+                <span className="text-success font-medium">
+                  secure, scalable REST APIs and database structures
+                </span>{" "}
+                that support real-world production applications.
               </p>
+
               <p>
-                I am a firm believer in continuous learning. Currently, I am
-                expanding my skills by mastering{" "}
-                <strong className="font-bold">Next.js</strong> and{" "}
-                <strong className="font-bold">TypeScript</strong> to build
-                scalable, server-side rendered applications and write more
-                maintainable code.
+                My approach goes beyond just writing code — I think in terms of{" "}
+                <span className="text-success font-medium">
+                  system design, performance optimization, and scalability
+                </span>
+                . I continuously explore new technologies and architectural
+                patterns to build efficient, maintainable, and future-ready
+                applications that deliver real user value.
               </p>
             </div>
 
@@ -68,11 +87,12 @@ const About = () => {
               </h3>
               <ul className="space-y-4 text-lg">
                 {[
-                  "User-first design approach",
-                  "Clean, modular code architecture",
-                  "Performance optimization",
-                  "Accessibility as priority",
-                  "Continuous learning mindset",
+                  "Build scalable and maintainable systems",
+                  "Focus on performance and optimized user experience",
+                  "Write clean, reusable, and well-structured code",
+                  "Think beyond UI — consider backend, data, and architecture",
+                  "Prioritize real-world problem solving over complexity",
+                  "Continuously learn and adapt to modern technologies",
                 ].map((item) => (
                   <li
                     key={item}
@@ -92,32 +112,41 @@ const About = () => {
               <h3 className="text-3xl font-bold text-success mb-6 flex items-center gap-2">
                 <FaSeedling className="text-green-400" /> Currently Exploring
               </h3>
+
               <div className="flex flex-wrap gap-3">
                 {[
                   {
-                    name: "Next.js 14",
-                    icon: <SiNextdotjs className="text-xl" />,
-                  },
-                  {
-                    name: "TypeScript",
-                    icon: <SiTypescript className="text-xl text-blue-500" />,
+                    name: "Go (Golang)",
+                    icon: <SiGo className="text-xl text-cyan-400" />,
                   },
                   {
                     name: "GraphQL",
                     icon: <SiGraphql className="text-xl text-pink-500" />,
                   },
                   {
+                    name: "Apollo GraphQL",
+                    icon: (
+                      <SiApollographql className="text-xl text-purple-400" />
+                    ),
+                  },
+                  {
                     name: "Docker",
                     icon: <SiDocker className="text-xl text-blue-400" />,
                   },
                   {
-                    name: "AWS Basics",
-                    icon: <FaAws className="text-xl text-orange-500" />,
+                    name: "AWS",
+                    icon: (
+                      <SiAmazonwebservices className="text-xl text-orange-400" />
+                    ),
+                  },
+                  {
+                    name: "Performance Optimization",
+                    icon: <FaChartLine className="text-xl text-yellow-400" />,
                   },
                 ].map((tech) => (
                   <span
                     key={tech.name}
-                    className="px-3 py-2 bg-success/10 text-white rounded-full border border-success/30 hover:bg-success/20 transition-colors flex items-center gap-2"
+                    className="px-3 py-2 bg-success/10 text-white rounded-full border border-success/30 hover:bg-success/20 transition-all duration-300 hover:scale-105 flex items-center gap-2"
                   >
                     {tech.icon}
                     {tech.name}
