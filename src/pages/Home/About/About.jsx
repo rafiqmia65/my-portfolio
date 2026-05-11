@@ -2,7 +2,6 @@ import React from "react";
 import { FaLightbulb, FaSeedling, FaStar, FaAws } from "react-icons/fa";
 import {
   SiGraphql,
-  SiDocker,
   SiGo,
   SiApollographql,
   SiAmazonwebservices,
@@ -128,10 +127,6 @@ const About = () => {
                     icon: (
                       <SiApollographql className="text-xl text-purple-400" />
                     ),
-                  },
-                  {
-                    name: "Docker",
-                    icon: <SiDocker className="text-xl text-blue-400" />,
                   },
                   {
                     name: "AWS",

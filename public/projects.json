@@ -1,6 +1,53 @@
 [
   {
     "id": "1",
+    "name": "EcoPulse",
+    "tagline": "Eco Innovation & Sustainability Platform",
+    "description": "A community-driven platform where users can share, explore, vote, and purchase eco-friendly innovative ideas.",
+    "detailedDescription": "EcoPulse is a modern full-stack sustainability platform focused on eco-friendly innovation and community collaboration. Users can create, explore, and interact with environmental ideas through voting, commenting, watchlists, and AI-powered tools. The platform features secure authentication, premium idea purchasing with Stripe integration, rich text editing using Tiptap, AI-generated eco content, smart recommendations, and performance analysis for ideas. Admins can manage users, moderate ideas, monitor payments, and analyze platform activity through advanced dashboards.",
+    "image": "https://i.ibb.co.com/KHdZjyW/screencapture-eco-pulse-client-vercel-app-2026-05-11-17-41-42.png",
+    "technologies": [
+      {
+        "category": "Frontend",
+        "items": [
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "TanStack Query",
+          "Shadcn UI",
+          "Framer Motion",
+          "Zustand"
+        ]
+      },
+      {
+        "category": "Backend",
+        "items": ["Node.js", "Express.js", "Prisma", "PostgreSQL"]
+      },
+      {
+        "category": "Services",
+        "items": ["Gemini AI", "Stripe", "Cloudinary", "Better Auth"]
+      }
+    ],
+    "links": {
+      "live": "https://eco-pulse-client.vercel.app",
+      "client": "https://github.com/rafiqmia65/eco-pulse-client",
+      "server": "https://github.com/rafiqmia65/eco-pulse-server"
+    },
+    "features": [
+      "AI-Powered Eco Content Generation using Gemini AI.",
+      "Smart Recommendations based on user interests and activity.",
+      "AI Idea Performance Analysis with sentiment and impact scoring.",
+      "Rich Text Idea Editor using Tiptap.",
+      "Premium Idea Purchase System with Stripe integration.",
+      "Role-Based Dashboards for Admins and Members.",
+      "Voting, Commenting, and Watchlist functionality.",
+      "Secure Authentication and Authorization system.",
+      "Advanced Idea Filtering, Search, and Sorting features.",
+      "Responsive and modern UI with dark/light mode support."
+    ]
+  },
+  {
+    "id": "2",
     "name": "Mentorium",
     "tagline": "Class Management Platform",
     "description": "A comprehensive class management platform with role-based dashboards for admins, teachers, and students.",
@@ -35,7 +82,7 @@
     ]
   },
   {
-    "id": "2",
+    "id": "3",
     "name": "Hoteleo",
     "tagline": "Hotel Booking Platform",
     "description": "A modern hotel booking web application with advanced filtering, real-time availability, and booking management.",
@@ -70,7 +117,7 @@
     ]
   },
   {
-    "id": "3",
+    "id": "4",
     "name": "TaskNexus",
     "tagline": "Productivity Management",
     "description": "A task management application with secure authentication and a fully responsive interface.",

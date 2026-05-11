@@ -68,6 +68,7 @@ const skillsData = {
     },
 
     { name: "Zod Validation", icon: <SiZod className="text-yellow-400" /> },
+    { name: "Docker", icon: <SiDocker className="text-blue-400" /> },
   ],
 
   Database: [
@@ -78,7 +79,6 @@ const skillsData = {
   ],
 
   DevOps: [
-    { name: "Docker", icon: <SiDocker className="text-blue-400" /> },
     {
       name: "Vercel",
       icon: <SiVercel className="text-white bg-black rounded" />,
